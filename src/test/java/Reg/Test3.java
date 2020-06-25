@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Test1 {
+public class Test3 {
 
     private WebDriver driver;
 
