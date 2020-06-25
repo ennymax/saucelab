@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class change_of_Password {
+public class Test1B {
 
     private WebDriver driver;
 

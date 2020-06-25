@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Contact_Details_SetUp
+public class Test2
 {
 
     private WebDriver driver;
