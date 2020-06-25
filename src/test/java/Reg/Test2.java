@@ -22,7 +22,7 @@ public class Test2
     private WebDriver driver;
 
     @Test
-    public void main() throws MalformedURLException, InterruptedException {
+    public void SetUp_After_Successful_Change_Of_Password() throws MalformedURLException, InterruptedException {
 
         String sauceUserName = System.getenv("ennymax");
         String sauceAccessKey = System.getenv("a341d50b-8ba3-431b-a7e9-1923916cf85b");

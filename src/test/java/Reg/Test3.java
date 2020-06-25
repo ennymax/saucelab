@@ -20,7 +20,7 @@ public class Test3 {
     private WebDriver driver;
 
     @Test
-    public void tomtom() throws MalformedURLException, InterruptedException {
+    public void Continue_Registration_After_Account_SetUP() throws MalformedURLException, InterruptedException {
         String sauceUserName = System.getenv("ennymax");
         String sauceAccessKey = System.getenv("a341d50b-8ba3-431b-a7e9-1923916cf85b");
         String URL = "https://ennymax:a341d50b-8ba3-431b-a7e9-1923916cf85b@ondemand.us-west-1.saucelabs.com:443/wd/hub";
