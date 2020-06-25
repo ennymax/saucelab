@@ -1,0 +1,22 @@
+<suite thread-count="2" name="souceLabtestSuite">
+    <test name="Win10-ff-test">
+        <parameter name="browser" value="Chrome" />
+        <parameter name="version" value="73.0" />
+        <parameter name="platform" value="Windows 10" />
+        <parameter name="name" value="Test1" />
+        <classes>
+            <class name="Reg.Test1" />
+        </classes>
+    </test>
+
+    <test name="Win10-ss-test">
+        <parameter name="browser" value="Chrome" />
+        <parameter name="version" value="73.0" />
+        <parameter name="platform" value="Windows 10" />
+        <parameter name="name" value="Test2" />
+        <classes>
+            <class name="Reg.Test1" />
+        </classes>
+    </test>
+
+</suite>
