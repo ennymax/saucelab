@@ -17,12 +17,12 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Test4 {
+public class Test5 {
 
     private WebDriver driver;
 
     @Test
-    public void Bank_SetUP_Invalid_Account() throws MalformedURLException, InterruptedException {
+    public void Bank_SetUP_Valid_Account() throws MalformedURLException, InterruptedException {
         String sauceUserName = System.getenv("ennymax");
         String sauceAccessKey = System.getenv("a341d50b-8ba3-431b-a7e9-1923916cf85b");
         String URL = "https://ennymax:a341d50b-8ba3-431b-a7e9-1923916cf85b@ondemand.us-west-1.saucelabs.com:443/wd/hub";
@@ -44,6 +44,7 @@ public class Test4 {
         caps.setCapability("platformName", "windows 10");
         caps.setCapability("sauce:options", sauceOptions);
         driver = new RemoteWebDriver(new URL(URL), caps);
+
 
         driver.get("http://www.cicod.com/lyte");
 
@@ -102,6 +103,8 @@ public class Test4 {
             System.out.println("Bank Details page IS NOT ENABLED");
         }
 
+
+
         Thread.sleep(1000);
         WebElement eee = (new WebDriverWait(driver, 60)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/div/div/section/div[2]/div/div[3]/form/div[1]/div[1]/label[1]/span[1]")));
         Actions action1 = new Actions(driver);
@@ -115,7 +118,7 @@ public class Test4 {
         action11.moveToElement(eeee).perform();
         eeee.click();
 
-        System.out.println("\n********************Invalid account Verification Begins*********************");
+        System.out.println("\n********************Valid Account Verification Begins*********************");
 
 
         Thread.sleep(1000);
@@ -129,13 +132,26 @@ public class Test4 {
         Select sel1 = new Select(ele2);
         sel1.selectByIndex(1);
 
+
         Thread.sleep(2000);
         WebElement lmore1v = (new WebDriverWait(driver, 60)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/div/div/section/div[2]/div/div[3]/form/div[1]/div[2]/div[1]/div/div[2]/div/input")));
         lmore1v.clear();
         lmore1v.sendKeys("2120883305");
-        System.out.println("\n********************Invalid account Test was Successful*********************");
-        System.out.println("\n ********************Tes04 Execution Completed********************");
 
+        Thread.sleep(7000);
+        WebElement clicker098 = (new WebDriverWait(driver, 60)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/div/div/section/div[2]/div/div[3]/form/div[1]/div[2]/div[2]/div/div[1]/div/input")));
+        String er1 = clicker098.getText();
+        System.out.println(er1);
+        String eer1 = "";
+        if(eer1.equalsIgnoreCase(er1)) {
+            System.out.println("\n********************Account Verification was successful*********************");
+        }
+        else {
+            System.out.println("\n********************Account verification Failed*********************");
+        }
+
+
+        System.out.println("\n ********************Tes05 Execution Completed********************");
 
     }
 
