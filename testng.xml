@@ -5,7 +5,7 @@
         <parameter name="platform" value="Windows 10" />
         <parameter name="name" value="Test1" />
         <classes>
-            <class name="Reg.Test1" />
+            <class name="Reg.change_of_Password" />
         </classes>
     </test>
 
@@ -15,7 +15,7 @@
         <parameter name="platform" value="Windows 10" />
         <parameter name="name" value="Test2" />
         <classes>
-            <class name="Reg.Test1" />
+            <class name="Reg.change_of_Password" />
         </classes>
     </test>
 

@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Test1 {
+public class change_of_Password {
 
     private WebDriver driver;
 
@@ -49,7 +49,6 @@ public class Test1 {
         Thread.sleep(2000);
         System.out.println("\n *************Domain Name*************");
         WebElement clicker11v1 = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/section[1]/div/div/div/div/div[2]/div/div[1]/div[1]/form/div[1]/input")));
-       // WebElement clicker11v1 = driver.findElement(By.xpath("/html/body/div[1]/section[1]/div/div/div/div/div[2]/div/div[1]/div[1]/form/div[1]/input"));
         String veri = clicker11v1.getText();
         String veer1 = "kemiport";
         if(veer1.equalsIgnoreCase(veri)) {
