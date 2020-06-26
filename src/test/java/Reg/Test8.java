@@ -18,7 +18,7 @@ public class Test8 {
     private WebDriver driver;
 
     @Test
-    public void Bank_Details_SetUp_Individual() throws MalformedURLException, InterruptedException {
+    public void Get_Started() throws MalformedURLException, InterruptedException {
         String sauceUserName = System.getenv("ennymax");
         String sauceAccessKey = System.getenv("a341d50b-8ba3-431b-a7e9-1923916cf85b");
         String URL = "https://ennymax:a341d50b-8ba3-431b-a7e9-1923916cf85b@ondemand.us-west-1.saucelabs.com:443/wd/hub";
@@ -81,7 +81,6 @@ public class Test8 {
         Thread.sleep(2000);
         WebElement lmore1kpbmno = (new WebDriverWait(driver, 60)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/div/div/section/div/div/div[1]/a[2]/div[1]")));
         lmore1kpbmno.click();
-
 
         System.out.println("********************Test08 Execution Completed********************");
     }
