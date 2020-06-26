@@ -1,9 +1,9 @@
 package Reg;
 
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.MutableCapabilities;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -12,8 +12,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import java.io.File;
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -22,7 +20,7 @@ public class Test6 {
     private WebDriver driver;
 
     @Test
-    public void Bank_SetUP_Valid_Account() throws MalformedURLException, InterruptedException {
+    public void Bank_Detail_SetUp_File_Upload_SetUp_Business() throws MalformedURLException, InterruptedException {
         String sauceUserName = System.getenv("ennymax");
         String sauceAccessKey = System.getenv("a341d50b-8ba3-431b-a7e9-1923916cf85b");
         String URL = "https://ennymax:a341d50b-8ba3-431b-a7e9-1923916cf85b@ondemand.us-west-1.saucelabs.com:443/wd/hub";
